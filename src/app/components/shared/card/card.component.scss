@@ -1,0 +1,38 @@
+.container {
+  max-width: 15rem;
+  height: 20rem;
+}
+
+.card-body {
+
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+
+  img:hover {
+    transform: scale(1.1);
+  }
+  
+  figcaption {
+    position: absolute;
+    background-color: #000;
+    bottom: 0;
+    color: #fff;
+    padding: 0.5rem;
+    width: 100%;
+  }
+}
+
+.line-price {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+}
+
+.emphasis {
+  position: absolute;
+  bottom: 50%;
+  right: 0;
+  background-color: #fff;
+  padding: 0.25rem;
+}

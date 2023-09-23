@@ -1,0 +1,13 @@
+<div class="container">
+	<figure *ngIf="game" class="card-body">
+		<img [src]="game.image" [alt]="game.title" />
+		<figcaption>
+			<p>Play now!</p>
+			<p class="line-price">
+				<span>{{ game.players | list }}</span>
+				<span>{{ game.price | currency : "R$" }}</span>
+			</p>
+		</figcaption>
+		<span class="emphasis">{{ emphasis }}</span>
+	</figure>
+</div>

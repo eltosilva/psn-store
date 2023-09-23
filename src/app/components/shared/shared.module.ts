@@ -1,18 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { LogoComponent } from './logo/logo.component';
-
-
+import { CardComponent } from './card/card.component';
+import { UtilsModule } from 'src/app/utils/utils.module';
 
 @NgModule({
-  declarations: [
-    LogoComponent
-  ],
-  exports: [
-    LogoComponent
-  ],
-  imports: [
-    CommonModule
-  ]
+	declarations: [CardComponent],
+	exports: [CardComponent],
+	imports: [CommonModule, UtilsModule],
 })
-export class SharedModule { }
+export class SharedModule {}

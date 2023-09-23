@@ -23,15 +23,3 @@ header {
     height: 100%;
   }
 }
-
-.menu-bar {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  padding: 0 8px;
-
-  ul {
-    display: flex;
-    list-style: none;
-  }
-}

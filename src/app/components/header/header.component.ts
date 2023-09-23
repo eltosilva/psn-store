@@ -5,11 +5,4 @@ import { Component } from '@angular/core';
 	templateUrl: './header.component.html',
 	styleUrls: ['./header.component.scss'],
 })
-export class HeaderComponent {
-	templateName: string = '';
-
-	public openSubMenu(name: string) {
-		if (this.templateName == name) this.templateName = '';
-		else this.templateName = name;
-	}
-}
+export class HeaderComponent {}

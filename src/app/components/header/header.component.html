@@ -5,38 +5,6 @@
 		</a>
 	</div>
 	<div class="menu-container">
-		<nav class="menu-bar">
-			<a routerLink="/home">
-				<ps-logo></ps-logo>
-			</a>
-			<ul>
-				<li>
-					<button (click)="openSubMenu('jogos')">Jogos</button>
-				</li>
-				<li>
-					<button (click)="openSubMenu('hardware')">Hardware</button>
-				</li>
-				<li>
-					<button>Seviços</button>
-				</li>
-				<li>
-					<button>Notícias</button>
-				</li>
-				<li>
-					<button>Loja</button>
-				</li>
-				<li>
-					<button>Suporte</button>
-				</li>
-			</ul>
-		</nav>
-	</div>
-	<div [ngSwitch]="templateName">
-		<div *ngSwitchCase="'jogos'">
-			<p>Escolheu jogos</p>
-		</div>
-		<div *ngSwitchCase="'hardware'">
-			<p>Escolheu Hardware</p>
-		</div>
+		<ps-menu></ps-menu>
 	</div>
 </header>
